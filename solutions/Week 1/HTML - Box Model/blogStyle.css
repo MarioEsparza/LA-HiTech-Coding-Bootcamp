@@ -1,0 +1,54 @@
+﻿/*Mario Esparza January 25, 2017 */
+body {
+    color: #000;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#blog-wrapper {
+    width: 600px;
+    margin: auto;
+    margin-top: 3%;
+    border: 1.2em solid #bec3c9;
+    padding: 15px;
+}
+
+.blog-content-wrapper {
+   padding: 3px;
+   
+}
+
+.blog-date {
+    margin-top: -15px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    color: #589fea;
+    font-size: 0.95em;
+}
+
+.blog-title {
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3c4b;
+    font-size: 1.2em;
+}
+
+.blog-quote-border {
+    border-left: solid 5px;
+    border-color: #c8cacf;
+}
+
+.blog-paragraph-border {
+    border-left: solid 6px #b7bcc2;
+}
+
+.blog-paragraph-margin {
+    margin-left: 6px;
+}
+
+.blog-post-divider {
+    border-top: 1px solid #d3dae2;
+    background: #f0f0f0;
+}

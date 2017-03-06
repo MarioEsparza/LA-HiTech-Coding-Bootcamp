@@ -1,0 +1,106 @@
+/*Mario Esparza January 27, 2017 */
+body {
+    color: #000;
+    background-color: #ecfbe2;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 600px;
+    margin: auto;
+    border: 0.3em solid #082008;
+}
+
+#header {
+    background-color: #082008;
+}
+
+#nav-bar-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #92ad78;
+    text-align: center;
+}
+
+#nav-bar-wrapper li {
+    display: inline-block;
+    width: 24%;
+    border-right: 2px solid #082008;
+   
+}
+
+#nav-bar-wrapper li:last-child {
+    border-right: none;
+}
+
+#nav-bar-wrapper li a {
+    display: inline-block;
+    color: #082008;
+    padding: 14px 16px;
+    text-decoration: none;    
+}
+
+#nav-bar-wrapper li a:hover {
+    color: #eb5f43;
+}
+
+#nav-bar-wrapper li a {
+    color: #082008;
+}
+#nav-bar-wrapper li a:visited {
+    color: #fff;
+}
+
+#main {
+    height: 350px;
+    background-color: #fff;
+    border-top: 0.3em solid #082008;
+    border-bottom: 0.3em solid #082008;
+}
+
+.main-text {
+    margin-left: 20px;
+}
+
+.main-list{
+    margin-left: 20px;
+}
+#main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+.main-imgs{
+    float: right;
+}
+#main-img-two {
+    float: right; 
+    margin: -115px 0px 0px;
+}
+
+#main-img-three {
+    float: right; 
+    margin: 25px 0px 0px;
+}
+
+.img-caption {
+    text-align:center;
+    margin: -35px 20px 0px;
+}
+
+
+#footer {
+    background-color: #92ad78;
+    height: 100%; 
+}
+
+#footer-text {
+    padding: 10px;
+    text-align:center;
+    margin: auto;
+    font-weight: 300;
+}
+

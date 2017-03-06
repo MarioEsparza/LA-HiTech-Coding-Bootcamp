@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 1: Forms</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form action="" method="">
+            <span>First Name: <input type="text" name="firstname" placeholder="John" required></input> First Name: <input type="text" name="lastname" placeholder="Smith" required> </span>
+            <br>
+            <span>Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other <input type="radio" name="gender">  </span>
+            <br>
+            <span> Email: <input type="text" name="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title ="Enter valid Email" required>  Password: <input type="password" name="pwsd" pattern=".{5,10}" title="Must be between 5 and 10 characters"></span>
+            <br>
+            <span> Birthday: <input type="date"></span>
+            <br>
+            <span>I agree to the term and conditions  <input type="checkbox" name="agree" value="yes"></span>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
