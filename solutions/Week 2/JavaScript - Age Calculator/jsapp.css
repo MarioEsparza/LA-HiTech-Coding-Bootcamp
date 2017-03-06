@@ -1,0 +1,26 @@
+﻿body {
+    background-color:#e1dfdf;
+}
+
+#navbar a{
+    color: #fff;
+}
+.content-box{
+    height:400px;
+    border-radius:3px;
+    background-color: #fff;
+    padding-top:50px;
+}
+
+.content-header {
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid #ecf0f1;
+}
+
+#demo {
+    margin-top: 50px;
+    text-align: center;
+}
