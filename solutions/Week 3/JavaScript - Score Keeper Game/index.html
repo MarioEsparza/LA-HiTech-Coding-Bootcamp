@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 3: Lab 13 - Score Keeper</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+    <link rel="shortcut icon" href="../favicon.png">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <h1 id="message" class="content-header"><span class="glyphicon glyphicon-edit glyph-style"></span> Lab 13: Score Keeper</h1>
+                <p id="" style="text-align: center;">Score Keeping App</p>
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 style="text-align: center;"><span id="scoreOne">0</span> VS <span id="scoreTwo">0</span></h2>
+                    <h4 style="text-align: center;">Playing to <strong><span id="scoreLimit">5</span></strong></h4>
+                    <div class="input-group">
+                        <div class="col-xs-5">
+                            <input id="limit" type="text" class="form-control" placeholder="Enter a score limit" onkeyup="input();">
+                        </div>
+                        <button id="togBtn" class="btn btn-success" type="button" onclick="playOne();" style="display: inline; margin-right:10px;"><span class="glyphicon glyphicon-user glyph-style"></span> Player 1</button>   
+                        <button id="togBtn" class="btn btn-primary" type="button" onclick="playTwo();" style="display: inline; margin-right:10px; "><span class="glyphicon glyphicon-user glyph-style"></span> Player 2</button>  
+                        <button id="togBtn" class="btn btn-danger" type="button" onclick="reset();" style="display: inline; margin-right: 10px; "><span class="glyphicon glyphicon-refresh glyph-style"></span> Reset</button>                  
+                    </div>
+                </div>                      
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="score.js"></script>
+
+</body>
+</html>

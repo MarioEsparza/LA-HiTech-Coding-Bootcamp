@@ -1,0 +1,96 @@
+﻿body {
+    background-color:#e1dfdf;
+}
+button{
+  margin:auto;
+  display:block;
+}
+#navbar a{
+    color: #fff;
+}
+.content-box{
+    border-radius:3px;
+    background-color: #fff;
+    padding-top:50px;
+    padding-bottom:100px;
+    display:block;
+    overflow:auto;
+    
+}
+
+.content-header {
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid #ecf0f1;
+}
+
+#demo {
+    margin-top: 50px;
+    text-align: center;
+}
+.game-box {
+    border: 2px solid #222;
+    padding: 0;
+}
+.game-header {
+    background-color: #4682b6;
+    color: #fff;
+    height: 100%;
+    padding: 20px;
+}
+
+.game-menu-item   {
+    color: #4682b6;
+    font-weight:700;
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom:0;
+    text-align: center;
+    font-size: medium;
+    
+    
+}
+#new {
+   margin-left: 150px;
+}
+#ez {
+    margin-left: 100px;
+    padding-right: 10px;
+     padding-left: 10px;
+}
+#hard {
+      padding-right: 10px;
+     padding-left: 10px;
+}
+#result {
+   margin-left: 100px;
+   text-align: center;
+}
+
+.winning {
+    color: #7df216;
+}
+.again {
+    color: #d51717;
+}
+.game-menu a:active {
+    background-color: #4682b6;
+    color: #fff;
+}
+.game-content {
+    background-color:#222;
+    height:auto;
+    margin: 0 auto;
+    padding-left: 17%;
+}
+
+.sqr {
+    background-color:#fff;
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}

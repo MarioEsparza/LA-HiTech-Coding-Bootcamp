@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 5: Lab 5 - FAQ Accordion </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <h1 id="message" class="content-header title"><span class="glyphicon glyphicon-align-justify glyph-style"></span> Lab 5: FAQ Accordion</h1>
+               <div id="container">
+			         <div id="accordion" c></div>
+			                <ul class="faq">
+				                <li class="q"><img src="img/arrow.png"> Question 1.</li>
+				                <li class="a" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper nulla purus, ut consectetur felis volutpat sit amet. Suspendisse quis ligula sed est tempus scelerisque ut a odio. </li>
+				                <li class="q"><img src="img/arrow.png"> Question 2.</li>
+				                <li class="a" style="display:none;">Phasellus iaculis suscipit neque ac feugiat. Proin at sem pharetra dolor posuere bibendum ac vel felis. Morbi tincidunt feugiat eleifend. Donec efficitur ligula eget urna pellentesque, nec eleifend arcu lobortis. sad tempor iaculis luctus.</li>
+				                <li class="q"><img src="img/arrow.png"> Question 3.</li>
+				                <li class="a" style="display:none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper nulla purus, ut consectetur felis volutpat sit amet. suspendisse quis ligula sed est tempus scelerisque ut a odio.</li>
+				                <li class="q"><img src="img/arrow.png"> Question 4.</li>
+				                <li class="a" style="display:none;">Phasellus iaculis suscipit neque ac feugiat. Proin at sem pharetra dolor posuere bibendum ac vel felis. Morbi tincidunt feugiat eleifend. Donec efficitur ligula eget urna pellentesque, nec eleifend arcu lobortis. Sed tempor iaculis luctus.</li>
+			                </ul>
+		              </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jsFAQ.js"></script>
+</body>
+</html>

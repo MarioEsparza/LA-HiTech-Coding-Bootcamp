@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 4: Lab 8 - Color Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">         
+                    <div class="game-box col-md-8 col-md-offset-2">
+                        <div id="hed" class="game-header">
+                            <h1 id="message" class="content-header"><span class="glyphicon glyphicon-th-large glyph-style"></span> Lab 8: Color Game</h1>
+                            <h2 class="content-header">RGB( <span id="R">&nbsp;</span>,<span id="G">&nbsp;</span>, <span id="B">&nbsp;</span> )</h2>
+                        </div>
+                        <div class="game-menu">
+                            <p id="new" class="game-menu-item" onclick="reset();">New Colors</p>
+                            <p id="result" class="game-menu-item"> &nbsp;</p>
+                            <p id="ez" class="game-menu-item" onclick="easyMode();">Easy</p>
+                            <p id="hard" class="game-menu-item" onclick="hardMode();">Hard</p>
+                        </div>
+                        <div class="game-content">
+                            <div class="row">
+                                <div class="">
+                                    <div id="sqr1" class="col-xs-4 sqr" onclick="check(this);"></div>
+                                    <div id="sqr2" class="col-xs-4 sqr" onclick="check(this);"></div>
+                                    <div id="sqr3" class="col-xs-4 sqr" onclick="check(this);"></div>
+                                </div>
+
+                            </div>      
+                            <div id="newRow"class="row">
+                                &nbsp;
+                            </div>             
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="colorgame.js"></script>
+
+</body>
+</html>

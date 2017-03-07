@@ -1,0 +1,46 @@
+﻿body {
+	background-color:#e1dfdf;
+}
+button{
+  margin:auto;
+  display:block;
+}
+#navbar a{
+	color: #fff;
+}
+.content-box{
+	border-radius:3px;
+	background-color: #fff;
+	padding-top:50px;
+	padding-bottom:100px;
+	display:block;
+	overflow:auto;
+	
+}
+
+.content-header {
+	text-align: center;
+}
+
+hr {
+	border-top: 2px solid #ecf0f1;
+}
+
+#demo {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.correct {
+			color: green;
+		}
+
+.wrong {
+	color: red;
+	background: pink;
+}
+
+.done {
+	color: gray;
+	text-decoration: line-through;
+}

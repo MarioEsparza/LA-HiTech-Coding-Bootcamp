@@ -1,0 +1,91 @@
+﻿body {
+    background-color:#e1dfdf;
+ 
+}
+button{
+  margin:auto;
+  display:block;
+}
+#navbar a{
+    color: #fff;
+}
+.content-box{
+
+    border-radius:3px;
+    background-color: #fff;
+    padding-top:50px;
+    padding-bottom:100px;
+    display:block;
+    overflow:auto;
+}
+
+.content-header {
+    text-align: center;
+}
+
+hr {
+    border-top: 2px solid #ecf0f1;
+}
+
+#demo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* main content */
+article {
+   text-align: center;
+   background: white;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+
+article h2 {
+   font-weight: bold;
+   font-size: 24px;
+   padding: 10px;
+}
+
+/* form */
+form {
+   background: #A67100;
+   padding: 5px;
+   height: 110px;
+  }
+fieldset {
+   padding: 1em;
+   background: #FFAE00;
+   border: none;
+   float: left;
+   width: 33.3334%;
+   height: 100px;
+  }
+input {
+   font-size: 1em;
+   width: 4em;
+   clear: left;
+  }
+input:focus {
+   background: #e3d5ba;
+  }
+label {
+   display: block;
+  }
+input, label, button, form p {
+   float: left;
+   margin: 5px 10px;
+  }
+p {
+   clear: left;
+}
+p#cValue {
+   width: 4em;
+   font-size: 1.1em;
+   height: 1.4em;
+   background: white;
+   padding: 0.2em;
+   overflow: hidden;
+  text-overflow: ellipsis;
+}

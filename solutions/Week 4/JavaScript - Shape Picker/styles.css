@@ -1,0 +1,32 @@
+﻿/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+
+
+#square {
+    margin-left:20px;
+   width: 220px;
+   height: 220px;
+   background: black;
+   background: red;
+}
+
+#triangle {
+   width: 0; 
+   height: 0; 
+   border-left: 127px solid transparent;
+   border-right: 127px solid transparent;
+   border-bottom: 220px solid yellow;
+}
+
+#circle {
+    margin-right:20px;
+   width: 220px;
+   height: 220px;
+   border-radius: 110px;
+   background: blue;
+}

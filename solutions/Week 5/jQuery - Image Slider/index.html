@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 5: Lab 4 - jQuery Effects </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <h1 id="message" class="content-header"><span class="glyphicon glyphicon-menu-left glyph-style"></span> <span class="glyphicon glyphicon-menu-right glyph-style"></span> Lab 6: jQuery Content Slider</h1>
+                <div id="container">
+                    <img id="prev" src="img/arrow-left.png" alt="Prev">
+                    <div id="slider">
+                        <div class="slide">
+                            <div class="slide-copy">
+                                <h2>Slider One</h2>
+                                <p>Caption one</p>
+                            </div>
+                            <img src="img/slide1.jpg">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-copy">
+                                <h2>Slider Two</h2>
+                                <p>Caption two</p>
+                            </div>
+                            <img src="img/slide2.jpg">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-copy">
+                                <h2>Slider Three</h2>
+                                <p>Caption three</p>
+                            </div>
+                            <img src="img/slide3.jpg">
+                        </div>
+                        <div class="slide">
+                            <div class="slide-copy">
+                                <h2>Slider Four</h2>
+                                <p>Caption four</p>
+                            </div>
+                            <img src="img/slide4.jpg">
+                        </div>
+                        <div class="slide ">
+                            <div class="slide-copy">
+                                <h2>Slider Five</h2>
+                                <p>Caption five</p>
+                            </div>
+                            <img src="img/slide5.jpg">
+                        </div>
+                    </div>
+                    <img id="next" src="img/arrow-right.png" alt="Next">
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jqSlider.js"></script>
+</body>
+</html>

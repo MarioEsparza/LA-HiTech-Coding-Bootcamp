@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+       JavaScript 6th Edition
+       Chapter 2
+       Hands-on Project 2-1
+
+       Author: Mario Esparza
+       Date: 2/19/2017
+
+       Filename: index.htm
+    -->
+
+    <title>Week 4: Lab 1 - Temp Converter </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <script src="modernizr.custom.05819.js"></script>
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <h1 id="message" class="content-header"><span class="glyphicon glyphicon-cloud glyph-style"></span> Lab 1: Temp Converter</h1>
+                <div class="col-md-6 col-md-offset-3">
+                        <h2 class="content-header">Fahrenheit (&#176; F) to Celsius (&#176; C) converter</h2>
+                        <form>
+                            <label for="fValue">
+                                Enter temp in &#176; F
+                            </label>
+                            <div class="input-group">
+                                <input id="fValue" type="number" class="form-control" placeholder="" required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success" type="button" id="button">Convert!</button>
+                                </span>
+                            </div>            
+                            <h2 class="content-header">Temp in &#176; C</h2>
+                            <h2 id="cValue" class="content-header success">&nbsp;</h2>
+                        </form>
+                </div>                      
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script>
+        function convert() {
+            var degF = document.getElementById("fValue").value;
+            degC = (degF - 32) * (5 / 9);
+            document.getElementById("cValue").innerHTML = degC;
+        }
+        document.getElementById("button").addEventListener("click", convert);
+    </script>
+
+</body>
+</html>

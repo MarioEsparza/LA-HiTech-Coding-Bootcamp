@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 5: Lab 8 - JSON Filter </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <div class="content-header-box">
+                    <h1 id="message" class="content-header vertical-align" ><span class="glyphicon glyphicon-list-alt glyph-style"></span> Lab 8: JSON Filter</h1>
+                </div>              
+                <div id="loader" style="display:none;">
+                    <img class="ajax-loader" src="https://core.trac.wordpress.org/raw-attachment/ticket/21456/wpspin_light.gif" />
+                </div>
+                <div id="ajaxresults"></div>
+                <div id="msg">Please select a filter</div>
+                <select id="filter">
+                    <option value="">Choose a filter</option>
+                    <option value="name">Name</option>
+                    <option value="age">age</option>
+                    <option value="address">Address</option>
+                </select>
+
+                <select id="filtercss">
+                    <option value="">Choose a style</option>
+                    <option value="wb">with cell border</option>
+                    <option value="nb">no cell border</option>
+                </select>
+
+                <table id="tbl" style="border-style:solid; border:1px;"></table>
+              </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jqFilter.js"></script>
+</body>
+</html>
