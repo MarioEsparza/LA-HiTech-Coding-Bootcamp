@@ -21,7 +21,7 @@
 * jQuery - Selectors, Methods, Events, Effects and JSON.
 
 ## Week `6` 
-* jQuery + Angular - Apps using jQuery, Angualr, and Web APIs.
+* jQuery + Angular - Apps using jQuery, AngularJS, and Web APIs.
 
 
 

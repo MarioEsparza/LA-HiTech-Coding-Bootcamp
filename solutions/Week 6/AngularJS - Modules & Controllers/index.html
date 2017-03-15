@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Week 6 - Lab 13 - 2 Angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700italic|Oswald' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" />
+
+</head >
+<body data-ng-app="menuApp">
+    <div class="header">
+        <h1><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span></h1>
+    </div>
+
+    <div class="main" data-ng-controller="MainController">
+        <div class="container">
+            <h1>Specials for {{ today | date }}</h1>
+
+            <h2>Appetizers</h2>
+            <div class="appetizers row" data-ng-repeat="appe in appetizers">
+                <div class="item col-md-9">
+                    <h3 class="name">{{ appe.name }} </h3>
+                    <p class="description">{{ appe.description }} </p>
+                </div>
+                <div class="price col-md-3">
+                    <p class="price"> {{appe.price | currency}} </p>
+                </div>
+            </div>
+            <h2>Main Course</h2>
+            <div class="main row" data-ng-repeat="main in mains">
+                <div class="item col-md-9">
+                    <h3 class="name">{{ main.name }} </h3>
+                    <p class="description">{{ main.description }} </p>
+                </div>
+                <div class="price col-md-3">
+                    <p class="price"> {{main.price | currency}} </p>
+                </div>
+            </div>
+            <h2>Sides</h2>
+            <div class="sides row" data-ng-repeat="side in sides">
+                <div class="item col-md-9">
+                    <h3 class="name">{{ side.name }} </h3>
+                    <p class="description">{{ side.description }} </p>
+                </div>
+                <div class="price col-md-3">
+                    <p class="price"> {{side.price | currency}} </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+</body>
+</html>

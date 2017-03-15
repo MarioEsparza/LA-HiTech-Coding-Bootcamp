@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 6: Lab 11 - Tic Tac Toe</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="jsapp.css">
+</head>
+<body>
+    <!-- Static navbar -->
+    <nav id="navbar" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-tasks"></span> Bootcamp JS Labs</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Week 2<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown Link 1</a></li>
+                            <li><a href="#">Dropdown Link 2</a></li>
+                            <li><a href="#">Dropdown Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Week 3</a></li>
+                    <li><a href="#">Week 4</a></li>
+                    <li><a href="#">Week 5</a></li>
+                    <li><a href="#">Week 6</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-12 content-box">
+                <div class="game-box col-md-10 col-md-offset-1">
+                    <div id="hed" class="game-header">
+                        <h3 id="message" class="content-header"><span class="glyphicon glyphicon-share glyph-style"></span> Lab 11: GitHub API</h3>
+                    </div>
+                    <div id="loader" style="display: none; width: 69px; height: 89px; position: absolute; top: 100%; left: 50%; padding: 2px;">
+                        <img class="ajax-loader" src="https://core.trac.wordpress.org/raw-attachment/ticket/21456/wpspin_light.gif" />
+                    </div>
+
+                    <div class="container">
+                        <h4>Github Repo Viewer</h4>
+                        <input id="username" type="text" placeholder="Search for a Github user" />
+                        <button id="search" class="btn">Search</button>
+
+                        <div id="results">
+                            <div id="loader" style="display: none; text-align: center; margin: auto;">
+                                <img class="ajax-loader" src="https://core.trac.wordpress.org/raw-attachment/ticket/21456/wpspin_light.gif" />
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- JS Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jqGithub.js"></script>
+
+</body>
+</html>
